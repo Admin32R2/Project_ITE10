@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    background: rgb(8, 8, 8);
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.Main001 {
+    position: relative; /* Create a positioning context for child elements */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow */
+}
+
+#Matrix {
+    position: absolute; /* Position the canvas absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 1; /* Make sure canvas is behind the content */
+}
+
+.BD001 {
+    height: 50%;
+    width: 50%;
+    position: relative; /* Position content above the canvas */
+    z-index: 2; /* Higher z-index to stay on top */
+    color: white; /* Text color */
+    padding: 50px; /* Add some padding */
+    display: flex; /* Use flex to organize content */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center-align content */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Optional: rounded corners */
+    max-width: 400px; /* Optional: limit the width */
+    margin: auto; /* Center the div horizontally */
+    top: 50%; /* Move the div down to the middle */
+    transform: translateY(-75%); /* Adjust position to truly center */
+}
+
+
+.flex-heading {
+    display: flex;
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Space between items */
+}
+
+.h1001 {
+    width: 250px; /* Fixed width */
+    text-align: center; /* Center-align text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    display: inline-block; /* Align properly in flex */
+}
+
+.Submit {
+    padding-right: 50px;
+    margin-top: 10px;
+    size: 50px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.Button {
+
+    font-size: 25px;
+}
+
+.ButtonForH1003 {
+    font-size: 25px; 
+}
